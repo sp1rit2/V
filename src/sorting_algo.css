@@ -1,0 +1,49 @@
+.sorting_main{
+    height: 92%;
+    width: 100%;
+    position: absolute;
+    background-color: azure;
+}
+
+/*Sorting navbar*/
+.sorting_nav{
+    width: 99.8%;
+    height: 100%;
+    border: 1px solid lightyellow;
+    padding: 10px 0px 10px 0px;
+    background-color: black;
+}
+
+/*bars*/
+.array-bar-pos{
+    background-color: lightskyblue;
+    padding: 1px;
+    margin: 1px;
+    /* width: 4px; */
+    display: inline-block;
+    border: 1px solid white;
+    /* box-shadow: black 5px 5px ; */
+    /* vertical-align: middle; */
+
+}
+
+/**/
+.container{
+    position: relative;
+    transform: rotate(180deg);
+    direction: rtl;
+    margin-top: auto;
+    margin-top: 1%;
+    
+    /* display: inline-block; */
+}
+
+/*keys of sorting*/
+.sorting_keys{
+    width: 100%;
+    height: 100%;
+    color: lightgoldenrodyellow;
+    padding: 0px 20px 0px 20px;
+    font-size: large;
+    cursor: pointer;
+}

@@ -1,0 +1,30 @@
+.navbar{
+    width: 99.8%;
+    background-color: black;
+    border: 1px solid lightyellow;
+}
+
+.keys{
+    display:inline-block;
+    color: lightgoldenrodyellow;
+    padding: 15px;
+    font-size: large;
+}
+
+.active_class{
+    cursor: pointer;
+    padding: 0px 20px 0px 20px;
+}
+
+/*range slider*/
+.range-div{
+    display:inline-block;
+}
+
+.range-label{
+    padding: 0px 0px 0px 20px;
+}
+
+.range-input{
+    padding: 0px 0px 0px 20px;
+}

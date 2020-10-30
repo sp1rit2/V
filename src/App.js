@@ -1,23 +1,24 @@
-import logo from './logo.svg';
 import './App.css';
+import Home from './Home'
+import './Home.css'
+import Navbar from './Navbar'
+import {Switch,Route} from 'react-router-dom'
+import Sorting from './sorting_algo'
+import String from './string_algo'
+import ShortestPath from './shortestpath'
+import Rng from './rng'
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="main">
+      <Navbar />
+      <Switch>
+          <Route exact path='/' component={Home}></Route>
+          <Route exact path='/sorting' component={Sorting}></Route>
+          <Route exact path='/string' component={String}></Route>
+          <Route exact path='/shortestpath' component={ShortestPath}></Route>
+          <Route exact path='/R&G' component={Rng}></Route>
+      </Switch>
     </div>
   );
 }

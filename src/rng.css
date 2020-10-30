@@ -1,0 +1,65 @@
+.rng_main{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    background-color: azure;
+}
+
+/*Sorting navbar*/
+.rng_nav{
+    width: 99.8%;
+    height: 100%;
+    border: 1px solid lightyellow;
+    padding: 10px 0px 10px 0px;
+    background-color: black;
+}
+
+.rng_keys{
+    width: 100%;
+    height: 100%;
+    color: lightgoldenrodyellow;
+    padding: 0px 20px 0px 20px;
+    font-size: large;
+    cursor: pointer;
+}
+.sudoku-grid{
+    /* margin-top: 10px; */
+    /* margin: 2px; */
+    /* text-indent: 100%; */
+    /* white-space: nowrap; */
+    /* overflow: hidden; */
+    color: transparent;
+    font-size: large;
+    font-weight: 700;
+
+    /* margin-left: 3px;
+    margin-right: 2px; */
+    cursor: pointer;
+    line-height: 60px;
+    border: 1px solid black;
+    width: 60px;
+    height: 60px; 
+    display: inline-block;
+    box-shadow: 10px 10px 5px grey;
+} 
+
+.kn{
+    display: inline-block;
+    height: 70px;
+    width: 70px;
+    border: 1px solid black;
+    font-size:40px;
+    color:transparent ;
+    cursor: pointer;
+    box-shadow: 10px 10px 5px grey;
+    
+}
+
+
+.maze-grid{
+    /* border: 1px solid black; */
+    height: 25px;
+    width: 25px;
+    display: inline-block;
+    margin-top: -5.6px;
+}

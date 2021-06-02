@@ -1,7 +1,7 @@
 
 export async function bubbleS(props,t){
     var a=props;
-    console.log(a)
+    console.log(a+" "+t)
     const disp=document.getElementsByClassName('array-bar-pos');
     // if(a.len<t)
     //     disp.style.width=`5px`

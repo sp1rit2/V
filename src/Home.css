@@ -2,4 +2,58 @@
     width: 100%;
     height: 100%;
     /* border: 1px solid black; */
+    background-color: azure;
 }
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+  body{
+    background: azure;
+    color: #777;
+    font-family: "Myriad Web Pro", Helvetica, Sans-Serif;
+    font-size: .875em;
+  }
+  
+  /* CONTAINERS */
+  main{
+    background-color: azure;
+    margin: auto;
+    max-width: 380px;
+  }
+  section{
+    background: #fff;
+    border-radius: .25em;
+    box-shadow: 0 .15em .175em hsla(0,0%,0%,.1);
+    margin: 1.5em;
+    overflow: hidden;
+  }
+  figure{
+    height: 20.5em;
+  }
+
+  
+  /* IMAGE */
+  img{
+    height: 100%;
+    object-fit: cover;
+    width: 100%;
+  }
+  
+  @supports (display: grid){
+    @media only screen and (min-width: 768px){
+      main{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+        grid-gap: 1.5em;
+        max-width: 1140px;
+        padding: 1.5em;
+      }
+  
+      section{
+        margin: 0;
+      }
+    }
+  }

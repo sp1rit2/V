@@ -37,30 +37,30 @@ class Sorting extends Component {
 
     async navigate() {
         // this.setState({flag:ele})
-        console.log("navigate : " + this.state.flag+" "+this.state.values)
+        console.log("navigate : " + this.state.flag + " " + this.state.values)
         var sorting_keys = document.getElementsByClassName('sorting_keys')
         for (var i = 0; i < sorting_keys.length; i++)
             sorting_keys[i].style.cursor = 'not-allowed'
 
         var t = this.state.array;
         if (this.state.flag == 1) {
-            await bs.bubbleS(this.state.array, 501-this.state.values)
+            await bs.bubbleS(this.state.array, 501 - this.state.values)
         }
         else if (this.state.flag == 2) {
-            await ins.insertionSort(this.state.array, 501-this.state.values)
+            await ins.insertionSort(this.state.array, 501 - this.state.values)
         }
         else if (this.state.flag == 3) {
-            await sel.selectionSort(this.state.array, 501-this.state.values)
+            await sel.selectionSort(this.state.array, 501 - this.state.values)
         }
         else if (this.state.flag == 4) {
-            await hp.heapSort(this.state.array, 501-this.state.values)
+            await hp.heapSort(this.state.array, 501 - this.state.values)
         }
         else if (this.state.flag == 5) {
             const disp = document.getElementsByClassName('array-bar-pos')
             var a = this.state.array;
             var anime = await mg.mergeSort(a);
             var x = 0;
-            const value = 501-this.state.values
+            const value = 501 - this.state.values
             console.log(value)
             console.log(anime.length)
             for (var i = 0; i < anime.length;) {
@@ -132,7 +132,7 @@ class Sorting extends Component {
             }
         }
         else if (this.state.flag == 6) {
-            await qs.quickSort(this.state.array, 501-this.state.values)
+            await qs.quickSort(this.state.array, 501 - this.state.values)
         }
         for (var i = 0; i < sorting_keys.length; i++)
             sorting_keys[i].style.cursor = 'pointer'
@@ -160,39 +160,75 @@ class Sorting extends Component {
                             {array.map((val) =>
                                 <div className="array-bar-pos" style={{ width: `${20}px`, height: `${val}px` }}></div>)}
                         </div>
-                        <div className="rangeBar">
-                            <Range
-                                step={25}
-                                min={1}
-                                max={500}
-                                values={this.state.values}
-                                onChange={(values) => this.setState({ values })}
-                                renderTrack={({ props, children }) => (
-                                    <div
-                                        {...props}
-                                        style={{
-                                            ...props.style,
-                                            height: '6px',
-                                            width: '300px',
-                                            backgroundColor: 'black'
-                                        }}
-                                    >
-                                        {children}
-                                    </div>
-                                )}
-                                renderThumb={({ props }) => (
-                                    <div
-                                        {...props}
-                                        style={{
-                                            ...props.style,
-                                            height: '20px',
-                                            width: '20px',
-                                            backgroundColor: 'white',
-                                            border: '1px solid black'
-                                        }}
-                                    />
-                                )}
-                            />
+                        <div>
+                            <div className="rangeBar">
+                                <Range
+                                    step={25}
+                                    min={1}
+                                    max={500}
+                                    values={this.state.values}
+                                    onChange={(values) => this.setState({ values })}
+                                    renderTrack={({ props, children }) => (
+                                        <div
+                                            {...props}
+                                            style={{
+                                                ...props.style,
+                                                height: '6px',
+                                                width: '300px',
+                                                backgroundColor: 'black'
+                                            }}
+                                        >
+                                            {children}
+                                        </div>
+                                    )}
+                                    renderThumb={({ props }) => (
+                                        <div
+                                            {...props}
+                                            style={{
+                                                ...props.style,
+                                                height: '20px',
+                                                width: '20px',
+                                                backgroundColor: 'white',
+                                                border: '1px solid black'
+                                            }}
+                                        />
+                                    )}
+                                />
+                            </div>
+                            <div className="rangeBar">
+                                <Range
+                                    step={25}
+                                    min={1}
+                                    max={500}
+                                    values={this.state.values}
+                                    onChange={(values) => this.setState({ values })}
+                                    renderTrack={({ props, children }) => (
+                                        <div
+                                            {...props}
+                                            style={{
+                                                ...props.style,
+                                                height: '6px',
+                                                width: '300px',
+                                                backgroundColor: 'black'
+                                            }}
+                                        >
+                                            {children}
+                                        </div>
+                                    )}
+                                    renderThumb={({ props }) => (
+                                        <div
+                                            {...props}
+                                            style={{
+                                                ...props.style,
+                                                height: '20px',
+                                                width: '20px',
+                                                backgroundColor: 'white',
+                                                border: '1px solid black'
+                                            }}
+                                        />
+                                    )}
+                                />
+                            </div>
                         </div>
                     </center>
                 </div>

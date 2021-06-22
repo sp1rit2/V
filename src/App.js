@@ -7,8 +7,12 @@ import Sorting from './sorting_algo'
 import String from './string_algo'
 import ShortestPath from './shortestpath'
 import Rng from './rng'
+import Error from './Error'
 
 function App() {
+  if (window.screen.width < 1280) {
+    window.location.href = "error";
+  }
   return (
     <div className="main">
       <Navbar />
@@ -18,6 +22,7 @@ function App() {
           <Route exact path='/string' component={String}></Route>
           <Route exact path='/shortestpath' component={ShortestPath}></Route>
           <Route exact path='/R&G' component={Rng}></Route>
+          <Route exact path='/error' component={Error}></Route>
       </Switch>
     </div>
   );

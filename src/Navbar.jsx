@@ -35,7 +35,7 @@ const Navbar = () =>{
         <div className="navbar">
             <center>
                 <div className="keys">
-                    <label className="active_class" extact to='/'onClick={()=>navigate('')}>Home</label>
+                    <label className="active_class" extact to='/'onClick={()=>navigate('')}>c-null</label>
                     <label className="active_class" extact to='/sorting' onClick={()=>navigate('sorting')}>Sorting Algorithm</label>
                     <label className="active_class" extact to='/string' onClick={()=>navigate('string')}>String Algorithm</label>
                     <label className="active_class" extact to='/shortestpath' onClick={()=>navigate('shortestpath')}>Shortest Path</label>

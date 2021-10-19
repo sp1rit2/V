@@ -40,8 +40,8 @@ const Navbar = () =>{
                     <label className="active_class" extact to='/string' onClick={()=>navigate('string')}>String Algorithm</label>
                     <label className="active_class" extact to='/shortestpath' onClick={()=>navigate('shortestpath')}>Shortest Path</label>
                     <label className="active_class" extact to='/rng' onClick={()=>navigate('R&G')}>Recursion & Graph</label>
-                    <label className="active_class" extact to='/help' onClick={()=>navigate('help')}>Help</label>
-                    {/* <div className='range-div'>
+                {/* <label className="active_class" extact to='/help' onClick={()=>navigate('help')}>Help</label>
+                    <div className='range-div'>
                         <label className='range-label'>Sixe : </label>
                         <input className='range-input' type="range" min="1" max="1000" defaultValue="500"></input>
                     </div> */}

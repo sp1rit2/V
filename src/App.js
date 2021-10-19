@@ -17,7 +17,7 @@ function App() {
     <div className="main">
       <Navbar />
       <Switch>
-          <Route exact path='/' component={Home}></Route>
+          <Route exact path='/' component={Sorting}></Route>
           <Route exact path='/sorting' component={Sorting}></Route>
           <Route exact path='/string' component={String}></Route>
           <Route exact path='/shortestpath' component={ShortestPath}></Route>
